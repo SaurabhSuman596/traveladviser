@@ -1,0 +1,53 @@
+.cardTinder {
+  box-shadow: 0px 0px 4px 1px rgb(180, 180, 180);
+  border-radius: 10px;
+  width: 100%;
+  max-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: white;
+}
+
+.cardImage {
+  height: 260px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-top-right-radius: 10;
+  border-top-left-radius: 10;
+}
+
+.mapContainer {
+  height: 100vh;
+  padding: 10;
+}
+
+.cardTinder {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mainMap {
+  height: 80vh;
+  width: 60vw;
+  position: relative;
+}
+
+.cardBox {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+@media only screen and (max-width: 560px) {
+  .mainMap {
+    width: 100%;
+  }
+
+  .cardBox {
+    width: 100%;
+  }
+}

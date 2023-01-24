@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { Stack } from '@mui/system';
+import Header from './components/Header';
+import Map from './components/Map';
+import Card from './components/Card';
+import './components/globalComp.css';
+import Dropdown from './components/Dropdown';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Stack
+        direction={{ xs: 'column-reverse', sm: 'row' }}
+        spacing={2}
+        justifyContent="space-between"
+        p={2}
+      >
+        <div className="cardBox">
+          <Dropdown />
+          <Card />
+        </div>
+
+        <Map />
+      </Stack>
     </div>
   );
 }
